@@ -68,7 +68,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
         _userId = userCredential.user?.uid; // Armazena o ID do usuário autenticado.
         _isLoadingAuth = false;
       });
-      print('Usuário Firebase autenticado anonimamente: ${_userId}');
+      print('Usuário Firebase autenticado anonimamente: $_userId');
     } catch (e) {
       print('Erro na autenticação anônima do Firebase: $e');
       setState(() {
@@ -538,9 +538,9 @@ Principais Gastos por Categoria (todos os meses):
                 });
               },
               backgroundColor: Colors.indigo,
-              child: const Icon(Icons.add, color: Colors.white),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
               elevation: 8,
+              child: const Icon(Icons.add, color: Colors.white),
             )
           : null,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked, // Posicionamento do FAB.
@@ -693,7 +693,7 @@ Principais Gastos por Categoria (todos os meses):
           // Título das Transações Recentes.
           Text(
             'Transações Recentes',
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headlineSmall, // CORRIGIDO: headline6 para headlineSmall
           ),
           const SizedBox(height: 16),
           // Exibe as transações recentes ou uma mensagem de vazio.
@@ -777,7 +777,7 @@ Principais Gastos por Categoria (todos os meses):
             children: [
               Text(
                 'Adicionar Nova Transação',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.headlineSmall, // CORRIGIDO: headline6 para headlineSmall
               ),
               const SizedBox(height: 16),
               // Campo de texto para a descrição.
@@ -944,7 +944,7 @@ Principais Gastos por Categoria (todos os meses):
             children: [
               Text(
                 'Gráficos de Receitas e Despesas por Mês',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.headlineSmall, // CORRIGIDO: headline6 para headlineSmall
               ),
               const SizedBox(height: 16),
               // Tabela de dados para simular o gráfico.
