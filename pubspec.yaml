@@ -1,0 +1,22 @@
+name: meus_gastos
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.8.0-278.1.beta <4.0.0' # Esta linha deve estar presente e com a versão correta
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.13.5
+  firebase_auth: ^4.15.2
+  http: ^1.1.0 # Certifique-se de que 'http' está aqui
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0 # Uma boa prática para análise de código

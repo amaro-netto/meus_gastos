@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "561065428018",
+    "project_id": "meusgastos-b235b",
+    "storage_bucket": "meusgastos-b235b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561065428018:android:50b6903fff83d00631682b",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZI_R5o9ixJJZnlAXiIhG4R_MUs9pqrAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
